@@ -80,8 +80,8 @@ html, body{
   }
 
   .chart{
-    margin-left: 25%;
-    margin-right: auto;
+    margin-left: 20%;
+    margin-right: 50%;
     width: 1000px;
     height: 1000px;
     align-content: center;
