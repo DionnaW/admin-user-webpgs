@@ -1,0 +1,92 @@
+html, body{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.header {
+      background-color: lightskyblue;
+      line-height: 70px;
+      padding-left: 30px;
+    
+  }
+
+  a,a:hover{
+    text-decoration: none!important;
+  }
+
+  .logout{
+    float: right;
+    padding-right: 30px;
+  }
+
+  ul{
+    background-color: yellowgreen;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    padding-top: 5%;
+    text-align: center;
+    margin: auto;
+  }
+
+  ul li{
+    list-style: none;
+    padding-bottom: 30px;
+    font-size: 15px;
+  }
+
+  ul li a{
+    color: black;
+    font-weight: bold;
+  }
+
+  ul li a:hover{
+    color: red;
+    text-decoration: none;
+  }
+
+  .content{
+    margin-left: 40%;
+    margin-top: 5%;
+  }
+
+  ol{
+
+    max-width: 100%;
+    height: 100%;
+    position: fixed;
+    padding-left: 45%;
+    text-align: center;
+  }
+
+  ol li{
+    list-style: none;
+    padding-bottom: 30px;
+    font-size: 15px;
+  }
+
+  ol li a{
+    color: black;
+    font-weight: bold;
+  }
+
+  ol li a:hover{
+    color: red;
+    text-decoration: none;
+  }
+
+  .chart{
+    margin-left: 25%;
+    margin-right: auto;
+    width: 1000px;
+    height: 1000px;
+    align-content: center;
+    position: fixed;
+    
+    
+  }
+

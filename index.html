@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration Access Only</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <header class="header">
+
+    <a href="">Admin Dashboard</a>
+
+    <div class="logout">
+        <!-- logout.php might go between""after href -->
+      <a href="" class="btn btn-primary">Logout</a>
+    </div>
+    </header>
+
+    <aside>
+
+        <ul>
+          <li>
+            <a href="">View Employees</a>
+          </li>
+
+          <li>
+            <a href="">View Customers</a>
+          </li>
+
+          <li>
+            <a href="">Monthly Sales</a>
+          </li>
+
+          <li>
+            <a href="">Inventory</a>
+          </li>
+
+          <li>
+            <a href="">Annual Sales</a>
+          </li>
+
+          <li>
+            <a href="">Shipping/Receiving</a>
+          </li>
+
+          <li>
+            <a href="">Budget</a>
+          </li>
+
+        </ul>
+      
+
+    </aside>
+
+    <div class="content">
+  
+      <h1>Sales Chart</h1>
+      
+      <aside> 
+        <ol>
+
+          <li>
+            <a href="">Dionna Watson<br> Product Owner</a>
+          </li>
+
+          <li>
+            <a href="">10 Years</a>
+          </li>
+
+          <li>
+            <a href="">614-732-1608</a>
+          </li>
+
+          <li>
+            <a href="">businessladythick@gmail.com</a>
+          </li>
+
+          <li>
+            <a href="">Zanesville, Ohio</a>
+          </li>
+
+
+        </ol>
+
+      </aside>
+      
+    </div> 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Sales', 'Av per Month'],
+          ['Jan-Mar',     4],
+          ['Apr-May',      2],
+          ['June-July',  11],
+          ['Aug-Sep', 7],
+          ['Oct-Dec',    0]
+        ]);
+
+        var options = {
+          title: 'Rolling 12 Month Period'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <div id="piechart" class="chart"></div> 
+
+</body>
+</html>
