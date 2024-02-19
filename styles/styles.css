@@ -54,6 +54,7 @@ html, body{
     margin-top: 5%;
   }
 
+
   ol{
 
     max-width: 100%;
@@ -77,6 +78,11 @@ html, body{
   ol li a:hover{
     color: red;
     text-decoration: none;
+  }
+
+  .wrapper-main{
+    width: 1000px;
+    margin: 0 auto;
   }
 
   .chart{
