@@ -1,9 +1,11 @@
 html, body{
-    background-color: white;
-    height: 100%;
-    width: 100%;
+    /* background-color: white; */
+    height: fit-content;
+    /* width: fit-content; */
     margin: 0px;
     padding: 0px;
+    margin-bottom: auto;
+    
     
 }
 
@@ -25,7 +27,7 @@ html, body{
 
   ul{
     background-color: yellowgreen;
-    width: 20%;
+    width: 15%;
     height: 200%;
     position: absolute;
     padding-top: 5%;
@@ -81,9 +83,12 @@ html, body{
   }
 
   .chart{
-    margin-left: 20%;
-    margin-right: 80%;
+    /* margin-left: 25%;
+    margin-right: 80%; */
     width: 1000px;
     height: 1000px;
+    margin: auto ;
+    background: none;
+
   }
 
